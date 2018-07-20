@@ -1,4 +1,4 @@
-package com.example.restws;
+package com.example.restws.exception;
 
 public class PatientBusinessException extends RuntimeException {
 

@@ -1,4 +1,4 @@
-package com.example.restws;
+package com.example.restws.impl;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -11,7 +11,9 @@ import javax.ws.rs.core.Response;
 
 import org.springframework.stereotype.Service;
 
-import com.example.restws.model.Patient;
+import com.example.restws.entity.Patient;
+import com.example.restws.exception.PatientBusinessException;
+import com.example.restws.service.PatientService;
 
 @Service
 public class PatientServiceImpl implements PatientService{

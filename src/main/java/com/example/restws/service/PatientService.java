@@ -1,4 +1,4 @@
-package com.example.restws;
+package com.example.restws.service;
 
 import java.util.List;
 
@@ -12,7 +12,7 @@ import javax.ws.rs.Consumes;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 
-import com.example.restws.model.Patient;
+import com.example.restws.entity.Patient;
 
 @Consumes("application/xml,application/json")
 @Produces("application/xml,application/json")

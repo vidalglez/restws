@@ -1,4 +1,4 @@
-package com.example.restws.model;
+package com.example.restws.entity;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
