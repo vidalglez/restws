@@ -7,13 +7,14 @@ import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 
 import com.example.restws.entity.Student;
 
-@Consumes("application/json")
-@Produces("application/json")
+@Consumes("application/xml,application/json")
+@Produces("application/xml,application/json")
 @Path("/studentservice")
 public interface StudentService {
 
@@ -21,15 +22,15 @@ public interface StudentService {
 	@GET
 	List<Student> getStudents();
 	
-	@Path("/students")
+	@Path("/student/{id}")
 	@GET
-	Student getStudent(Integer id);
+	Student getStudent(@PathParam(value = "id") Integer id);
 	
-	@Path("/students")
+	@Path("/student")
 	@POST
 	Response createStudent(Student s);
 	
-	@Path("/students")
+	@Path("/student")
 	@PUT
 	Response updateStudent(Student s);
 }
