@@ -1,4 +1,4 @@
-package com.example.restws.impl;
+package com.example.restws.service.impl;
 
 import java.util.ArrayList;
 import java.util.Collection;
